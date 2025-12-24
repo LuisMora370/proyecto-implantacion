@@ -1,0 +1,149 @@
+<!-- Formulario para agregar un nuevo proveedor -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Proveedor</title>
+    <link rel="stylesheet" href="../../../components/styles/general.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/main.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/stock.css">
+</head>
+<body>
+    <aside>
+        <div class="logo-container">
+            <img src="../../../resources/img/Inversiones Multimarcas TRC 16.png" alt="Logo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="list-element">
+                <li class="list-item"><a href="#" class="link">Dashboard</a></li>
+                <li class="list-item">Inventario
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Stock</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Nuevo producto</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Entradas de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Salida de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Movimientos</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Libro C/P
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Clientes</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Proveedores</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Reportes</li>
+                <li class="list-item">Usuarios
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Nuevo usuario</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Lista de Usuarios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <footer class="sidebar-footer">
+            <small style="color: #aaa; display: block; text-align: center; margin: 30px 0 10px 0; font-size: 12px;">&copy; 2025 Inversiones Multimarcas TRC. Todos los derechos reservados.</small>
+        </footer>
+    </aside>
+    <div class="content">
+        <header>
+            <div class="control-center">
+                <div class="user">
+                    <img src="../../../resources/ico/User.png" alt="Usuario">
+                    <div class="userInfo">
+                        <label for="" class="tag Username">Nombre de usuario</label>
+                        <div class="userFunctions">
+                            <p>ID: </p><label for="" class="id">12345678900</label>
+                        </div>
+                        <button type="button" class="exit">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content-form animate-form-fadein">
+            <div class="form-card">
+                <div class="form-header">
+                    <img src="../../../resources/img/Inversiones Multimarcas TRC 4.png" alt="icono" class="form-icon">
+                </div>
+                <h2 class="form-title animate-form-slidein">Formulario de Proveedor</h2>
+                <form class="product-form animate-form-fadein">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="empresa">Nombre o Razon Social:</label>
+                            <input type="text" id="empresa" name="empresa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo_empresa">Tipo de Empresa:</label>
+                            <select id="tipo_empresa" name="tipo_empresa" required>
+                                <option value="">Seleccione el tipo</option>
+                                <option value="distribuidor">Distribuidor</option>
+                                <option value="fabricante">Fabricante</option>
+                                <option value="importador">Importador</option>
+                                <option value="minorista">Minorista</option>
+                                <option value="mayorista">Mayorista</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 0414-1234567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="direccion">Dirección Fiscal:</label>
+                            <input type="text" id="direccion" name="direccion" placeholder="Ejemplo: Av. Bolívar, Caracas" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" placeholder="Ejemplo: Caracas" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="estado">Estado:</label>
+                            <input type="text" id="estado" name="estado" placeholder="Ejemplo: Distrito Capital" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rif">RIF:</label>
+                            <input type="text" id="rif" name="rif" placeholder="Ejemplo: J-12345678-9" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="banco">Banco:</label>
+                            <input type="text" id="banco" name="banco" placeholder="Ejemplo: Banco de Venezuela" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cuenta_bancaria">Cuenta Bancaria:</label>
+                            <input type="text" id="cuenta_bancaria" name="cuenta_bancaria" placeholder="Ejemplo: 0102-1234-5678-9012" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipo_cuenta">Tipo de Cuenta:</label>
+                            <select id="tipo_cuenta" name="tipo_cuenta" placeholder="Ejemplo: Seleccione el tipo" required>
+
+                                <option value="corriente">Corriente</option>
+                                <option value="ahorros">Ahorros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="observaciones">Observaciones:</label>
+                            <textarea id="observaciones" name="observaciones" rows="3" placeholder="Notas adicionales"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-registrar">Agregar Proveedor</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

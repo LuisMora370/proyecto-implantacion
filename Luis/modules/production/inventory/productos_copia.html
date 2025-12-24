@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link rel="stylesheet" href="../../../components/styles/general.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/main.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/stock.css">
+</head>
+<body>
+    <aside>
+        <div class="logo-container">
+            <img src="../../../resources/img/Inversiones Multimarcas TRC 16.png" alt="" srcset="">
+        </div>
+        <nav class="nav-bar">
+            <ul class="list-element">
+                <li class="list-item"><a href="#" class="link">Dashboard</a></li>
+                <li class="list-item">Inventario
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Stock</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Nuevo producto</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Entradas de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">salida de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Movimientos</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Libro C/P
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Clientes</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Proveedores</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Reportes
+                </li>
+                <li class="list-item">Usuarios
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Nuevo usuario</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Lista de Usuarios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <footer class="sidebar-footer">
+            <small style="color: #aaa; display: block; text-align: center; margin: 30px 0 10px 0; font-size: 12px;">&copy; 2025 Inversiones Multimarcas TRC. Todos los derechos reservados.</small>
+        </footer>
+    </aside>
+    <div class="content">
+        <header>
+            <div class="control-center">
+                <div class="user">
+                    <img src="../../../resources/ico/User.png" alt="" srcset="">
+                    <div class="userInfo">
+                        <label for="" class="tag Username">Nombre de usuario</label>
+                        <div class="userFunctions">
+                            <p>ID: </p><label for="" class="id">12345678900</label>
+                        </div>
+                        <button type="button" class="exit">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="form-card">
+            <div class="form-header">
+                <img src="../../../resources/img/Inversiones Multimarcas TRC 4.png" alt="icono" class="form-icon" style="width: 80px; margin: 0 auto; display: block;">
+            </div>
+            <h2 class="form-title animate-form-slidein">Listado de Inventario</h2>
+            <div class="filter-bar" style="margin-bottom: 18px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+                <input type="text" id="buscar-movimiento" placeholder="Buscar por producto, código o proveedor..." style="padding: 7px 12px; border-radius: 8px; border: 1px solid #ccc; min-width: 180px;">
+                <select id="filtrar-tipo" style="padding: 7px 12px; border-radius: 8px; border: 1px solid #ccc;">
+                    <option value="">Todas las categorías</option>
+                    <option value="motor">Motor</option>
+                    <option value="transmision">Transmisión</option>
+                    <option value="suspension">Suspensión</option>
+                    <option value="frenos">Frenos</option>
+                    <option value="carroceria">Carrocería</option>
+                    <option value="electricos">Eléctricos</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <input type="date" id="filtrar-fecha" style="padding: 7px 12px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+        </div>
+        <h1 style="text-align: center; color: white;"></h1>
+        <table class="stock-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Código</th>
+                    <th>Categoría</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Batería 12V</td>
+                    <td>ACME</td>
+                    <td>PowerMax</td>
+                    <td>2024</td>
+                    <td>BAT-001</td>
+                    <td>Eléctricos</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Filtro de aceite</td>
+                    <td>OilPro</td>
+                    <td>OP-200</td>
+                    <td>2023</td>
+                    <td>FIL-002</td>
+                    <td>Motor</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Pastillas de freno</td>
+                    <td>BrakeMaster</td>
+                    <td>BM-400</td>
+                    <td>2022</td>
+                    <td>FRE-003</td>
+                    <td>Frenos</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Amortiguador trasero</td>
+                    <td>SuspensionPro</td>
+                    <td>SP-TRS</td>
+                    <td>2023</td>
+                    <td>SUS-004</td>
+                    <td>Suspensión</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Espejo retrovisor</td>
+                    <td>VisionPlus</td>
+                    <td>VP-MIR</td>
+                    <td>2024</td>
+                    <td>ESP-005</td>
+                    <td>Carrocería</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

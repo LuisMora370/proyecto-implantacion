@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link rel="stylesheet" href="../../../components/styles/general.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/main.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/stock.css">
+
+
+</head>
+<body>
+    <aside>
+        <div class="logo-container">
+            <img src="../../../resources/img/Inversiones Multimarcas TRC 16.png" alt="" srcset="">
+        </div>
+        <nav class="nav-bar">
+            <ul class="list-element">
+                <li class="list-item"><a href="#" class="link">Dashboard</a></li>
+                <li class="list-item">Inventario
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Stock</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Nuevo producto</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Entradas de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">salida de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Movimientos</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Libro C/P
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Clientes</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Proveedores</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Reportes
+                </li>
+                <li class="list-item">Usuarios
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Nuevo usuario</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Lista de Usuarios</a></li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <footer class="sidebar-footer">
+            <small style="color: #aaa; display: block; text-align: center; margin: 30px 0 10px 0; font-size: 12px;">&copy; 2025 Inversiones Multimarcas TRC. Todos los derechos reservados.</small>
+        </footer>
+    </aside>
+    <div class="content">
+        <header>
+            <div class="control-center">
+                <div class="user">
+                    <img src="../../../resources/ico/User.png" alt="" srcset="">
+                    <div class="userInfo">
+                        <label for="" class="tag Username">Nombre de usuario</label>
+                        <div class="userFunctions">
+                            <p>ID: </p><label for="" class="id">12345678900</label>
+                        </div>
+                        <button type="button" class="exit">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content-form animate-form-fadein">
+            <div class="form-card">
+                <div class="form-header">
+                    <img src="../../../resources/img/Inversiones Multimarcas TRC 4.png" alt="icono" class="form-icon" style="width: 80px; margin: 0 auto; display: block;">
+                </div>
+                <h2 class="form-title animate-form-slidein">Registrar entrada de producto</h2>
+                <form class="product-form animate-form-fadein" action="#" method="post" novalidate="">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre-producto">Nombre del producto</label>
+                            <input type="text" id="nombre-producto" name="nombre-producto" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="codigo">Código o referencia</label>
+                            <input type="text" id="codigo" name="codigo" required="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cantidad">Cantidad a ingresar</label>
+                            <input type="number" id="cantidad" name="cantidad" min="1" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="ubicacion">Ubicación</label>
+                            <input type="text" id="ubicacion" name="ubicacion" required="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="proveedor">Proveedor</label>
+                            <input type="text" id="proveedor" name="proveedor" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-entrada">Fecha de entrada</label>
+                            <input type="date" id="fecha-entrada" name="fecha-entrada" required="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="observaciones">Observaciones</label>
+                            <textarea id="observaciones" name="observaciones" rows="2"></textarea>
+                        </div>
+                        <div class="form-group"></div>
+                    </div>
+                    <button type="button" class="btn-registrar"disabled="">Registrar entrada</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

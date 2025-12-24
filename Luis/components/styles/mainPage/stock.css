@@ -1,0 +1,162 @@
+/* Estilos para la tabla de stock */
+.stock-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(255, 255, 255, 0.842);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+    margin: 32px 0;
+    font-size: 1.05rem;
+    backdrop-filter: blur(2px);
+    transition: box-shadow 0.3s;
+}
+.stock-table th, .stock-table td {
+    padding: 14px 3px;
+    padding-left: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e000;
+    vertical-align: middle;
+}
+.stock-table th {
+    background: linear-gradient(90deg, #8a4242 0%, #101111 100%);
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    letter-spacing: 0.5px;
+    font-size: 1.08em;
+    text-shadow: 0 1px 2px #0002;
+}
+.stock-table tbody tr {
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.stock-table tbody tr:hover {
+    background: #c7f5df;
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.07);
+    z-index: 1;
+}
+
+/* Notificaciones de stock */
+.stock-notification {
+    display: inline-block;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.10);
+    border: none;
+    text-shadow: 0 1px 2px #0002;
+}
+.stock-notification.max {
+    background: linear-gradient(90deg, #4ecb8f 0%, #38b87c 100%);
+    border: none;
+    box-shadow: 0 2px 8px 0 #4ecb8f44;
+}
+.stock-notification.low {
+    background: linear-gradient(90deg, #e74c3c 0%, #ff7675 100%);
+    border: none;
+    animation: blinkStock 1.2s infinite alternate;
+    box-shadow: 0 2px 8px 0 #e74c3c44;
+}
+@keyframes blinkStock {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.18) drop-shadow(0 0 6px #ff7675); }
+}
+/* Estilos para hacer la tabla responsive */
+
+
+
+
+
+
+
+
+
+
+/* Adaptación para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .stock-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0.95rem;
+    }
+    .stock-table th, .stock-table td {
+        font-size: 14px;
+        padding: 8px 6px;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn.add {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn.modify {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn.output {
+    background-color: #FF9800;
+    color: white;
+}
+
+.btn.disable {
+    background-color: #F44336;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+}
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    aside {
+        width: 80%;
+        left: -80%;
+    }
+
+    aside:hover {
+        left: 0;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .user {
+        width: 40px;
+        height: 40px;
+    }
+
+    .list-item {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .sublist-item {
+        margin: 5px;
+        padding: 5px;
+    }
+}

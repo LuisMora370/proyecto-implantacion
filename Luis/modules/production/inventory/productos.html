@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link rel="stylesheet" href="../../../components/styles/general.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/main.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/stock.css">
+
+
+</head>
+<body>
+    <aside>
+        <div class="logo-container">
+            <img src="../../../resources/img/Inversiones Multimarcas TRC 16.png" alt="" srcset="">
+        </div>
+        <nav class="nav-bar">
+            <ul class="list-element">
+                <li class="list-item"><a href="#" class="link">Dashboard</a></li>
+                <li class="list-item">Inventario
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Stock</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Nuevo producto</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Entradas de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">salida de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Movimientos</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Libro C/P
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Clientes</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Proveedores</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Reportes
+                </li>
+                <li class="list-item">Usuarios
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Nuevo usuario</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Lista de Usuarios</a></li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <footer class="sidebar-footer">
+            <small style="color: #aaa; display: block; text-align: center; margin: 30px 0 10px 0; font-size: 12px;">&copy; 2025 Inversiones Multimarcas TRC. Todos los derechos reservados.</small>
+        </footer>
+    </aside>
+    <div class="content">
+        <header>
+            <div class="control-center">
+                <div class="user">
+                    <img src="../../../resources/ico/User.png" alt="" srcset="">
+                    <div class="userInfo">
+                        <label for="" class="tag Username">Nombre de usuario</label>
+                        <div class="userFunctions">
+                            <p>ID: </p><label for="" class="id">12345678900</label>
+                        </div>
+                        <button type="button" class="exit">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <h1>Vistaea de Stock</h1>
+        <table class="stock-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Código</th>
+                    <th>Categoría</th>
+                    <th>Cantidad</th>
+                    <th>Ubicación</th>
+                    <th>Proveedor</th>
+                    <th>Precio compra</th>
+                    <th>Precio venta</th>
+                    <th>Descripción</th>
+                    <th>Notificación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Batería 12V</td>
+                    <td>ACME</td>
+                    <td>PowerMax</td>
+                    <td>2024</td>
+                    <td>BAT-001</td>
+                    <td>Eléctricos</td>
+                    <td>200</td>
+                    <td>Almacén Central</td>
+                    <td>Distribuidora XYZ</td>
+                    <td>$50.00</td>
+                    <td>$80.00</td>
+                    <td>Batería de alto rendimiento</td>
+                    <td><span class="stock-notification max">Stock al máximo</span></td>
+                </tr>
+                <tr>
+                    <td>Filtro de aceite</td>
+                    <td>OilPro</td>
+                    <td>OP-200</td>
+                    <td>2023</td>
+                    <td>FIL-002</td>
+                    <td>Motor</td>
+                    <td>3</td>
+                    <td>Almacén B</td>
+                    <td>Lubricantes S.A.</td>
+                    <td>$5.00</td>
+                    <td>$10.00</td>
+                    <td>Filtro para motor gasolina</td>
+                    <td><span class="stock-notification low">¡Stock casi agotado!</span></td>
+                </tr>
+                <tr>
+                    <td>Pastillas de freno</td>
+                    <td>BrakeMaster</td>
+                    <td>BM-400</td>
+                    <td>2022</td>
+                    <td>FRE-003</td>
+                    <td>Frenos</td>
+                    <td>25</td>
+                    <td>Almacén C</td>
+                    <td>Repuestos Express</td>
+                    <td>$15.00</td>
+                    <td>$25.00</td>
+                    <td>Juego de pastillas delanteras</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Amortiguador trasero</td>
+                    <td>SuspensionPro</td>
+                    <td>SP-TRS</td>
+                    <td>2023</td>
+                    <td>SUS-004</td>
+                    <td>Suspensión</td>
+                    <td>40</td>
+                    <td>Almacén D</td>
+                    <td>AutoPartes S.A.</td>
+                    <td>$30.00</td>
+                    <td>$55.00</td>
+                    <td>Amortiguador para SUV</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Espejo retrovisor</td>
+                    <td>VisionPlus</td>
+                    <td>VP-MIR</td>
+                    <td>2024</td>
+                    <td>ESP-005</td>
+                    <td>Carrocería</td>
+                    <td>12</td>
+                    <td>Almacén E</td>
+                    <td>Refacciones Global</td>
+                    <td>$8.00</td>
+                    <td>$18.00</td>
+                    <td>Espejo lateral universal</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos</title>
+    <link rel="stylesheet" href="../../../components/styles/general.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/main.css">
+    <link rel="stylesheet" href="../../../components/styles/mainPage/movements.css">
+
+
+</head>
+<body>
+    <aside>
+        <div class="logo-container">
+            <img src="../../../resources/img/Inversiones Multimarcas TRC 16.png" alt="" srcset="">
+        </div>
+        <nav class="nav-bar">
+            <ul class="list-element">
+                <li class="list-item"><a href="#" class="link">Dashboard</a></li>
+                <li class="list-item">Inventario
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Stock</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Nuevo producto</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Entradas de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">salida de productos</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Movimientos</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Libro C/P
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Clientes</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Proveedores</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">Reportes
+                </li>
+                <li class="list-item">Usuarios
+                    <ul class="sublist">
+                        <li class="sublist-item"><a href="#" class="link">Nuevo usuario</a></li>
+                        <li class="sublist-item"><a href="#" class="link">Lista de Usuarios</a></li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <footer class="sidebar-footer">
+            <small style="color: #aaa; display: block; text-align: center; margin: 30px 0 10px 0; font-size: 12px;">&copy; 2025 Inversiones Multimarcas TRC. Todos los derechos reservados.</small>
+        </footer>
+    </aside>
+    <div class="content">
+        <header>
+            <div class="control-center">
+                <div class="user">
+                    <img src="../../../resources/ico/User.png" alt="" srcset="">
+                    <div class="userInfo">
+                        <label for="" class="tag Username">Nombre de usuario</label>
+                        <div class="userFunctions">
+                            <p>ID: </p><label for="" class="id">12345678900</label>
+                        </div>
+                        <button type="button" class="exit">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content-form animate-form-fadein">
+            <div class="form-card">
+                <div class="form-header">
+                    <img src="../../../resources/img/Inversiones Multimarcas TRC 4.png" alt="icono" class="form-icon" style="width: 80px; margin: 0 auto; display: block;">
+                </div>
+                <h2 class="form-title animate-form-slidein">Movimientos de Inventario</h2>
+                <div class="filter-bar" style="margin-bottom: 18px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+                    <input type="text" id="buscar-movimiento" placeholder="Buscar por producto, código o proveedor..." style="padding: 7px 12px; border-radius: 8px; border: 1px solid #ccc; min-width: 180px;">
+                    <select id="filtrar-tipo" style="padding: 7px 12px; border-radius: 8px; border: 1px solid #ccc;">
+                        <option value="">Todos los tipos</option>
+                        <option value="entrada">Entrada</option>
+                        <option value="salida">Salida</option>
+                    </select>
+                <input type="date" id="filtrar-fecha" style="padding: 7px 12px; border-radius: 8px; border: 1px solid #ccc;">
+                </div>
+                <div style="overflow-x:auto;">
+            </div>    
+        </div>    
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Tipo</th>
+                            <th>Producto</th>
+                            <th>Código</th>
+                            <th>Cantidad</th>
+                            <th>Ubicación</th>
+                            <th>Proveedor</th>
+                            <th>Observaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-05-19</td>
+                            <td><span class="stock-notification max">Entrada</span></td>
+                            <td>Batería 12V</td>
+                            <td>BAT-001</td>
+                            <td>100</td>
+                            <td>Almacén Central</td>
+                            <td>Distribuidora XYZ</td>
+                            <td>Ingreso inicial de stock</td>
+                        </tr>
+                        <tr>
+                            <td>2025-05-18</td>
+                            <td><span class="stock-notification low">Salida</span></td>
+                            <td>Filtro de aceite</td>
+                            <td>FIL-002</td>
+                            <td>5</td>
+                            <td>Almacén B</td>
+                            <td>Lubricantes S.A.</td>
+                            <td>Venta a cliente</td>
+                        </tr>
+                        <tr>
+                            <td>2025-05-17</td>
+                            <td><span class="stock-notification max">Entrada</span></td>
+                            <td>Pastillas de freno</td>
+                            <td>FRE-003</td>
+                            <td>50</td>
+                            <td>Almacén C</td>
+                            <td>Repuestos Express</td>
+                            <td>Reposición de stock</td>
+                        </tr>
+                        <tr>
+                            <td>2025-05-16</td>
+                            <td><span class="stock-notification low">Salida</span></td>
+                            <td>Amortiguador trasero</td>
+                            <td>SUS-004</td>
+                            <td>10</td>
+                            <td>Almacén D</td>
+                            <td>AutoPartes S.A.</td>
+                            <td>Envío a sucursal</td>
+                        </tr>
+                        <tr>
+                            <td>2025-05-15</td>
+                            <td><span class="stock-notification max">Entrada</span></td>
+                            <td>Espejo retrovisor</td>
+                            <td>ESP-005</td>
+                            <td>20</td>
+                            <td>Almacén E</td>
+                            <td>Refacciones Global</td>
+                            <td>Compra a proveedor</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

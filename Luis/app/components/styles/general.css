@@ -1,0 +1,27 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: 10px;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+}
+input{
+    padding-left: 10px;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+
+.sep{
+    width: 90%;
+    height: 5px;
+    border-radius: 20px;
+    background: #a6a6a650;
+    margin-left: 5px;
+}

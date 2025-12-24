@@ -1,0 +1,105 @@
+/* Estilos para la tabla de movimientos */
+.stock-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+    margin: 32px 0;
+    font-size: 1.05rem;
+    backdrop-filter: blur(2px);
+    transition: box-shadow 0.3s;
+}
+.stock-table th, .stock-table td {
+    padding: 14px 1px;
+    padding-left: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e09a;
+    vertical-align: middle;
+}
+.stock-table th {
+    background: linear-gradient(90deg, #000000 0%, #8a4040 100%);
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    letter-spacing: 0.5px;
+    font-size: 1.08em;
+    text-shadow: 0 1px 2px #0002;
+}
+.stock-table tbody tr {
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.stock-table tbody tr:hover {
+    background: #c7f5df;
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.07);
+    z-index: 1;
+}
+
+/* Notificaciones de stock/movimiento */
+.stock-notification {
+    display: inline-block;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.10);
+    border: none;
+    text-shadow: 0 1px 2px #0002;
+}
+.stock-notification.max {
+    background: linear-gradient(90deg, #4ecb8f 0%, #38b87c 100%);
+    border: none;
+    box-shadow: 0 2px 8px 0 #4ecb8f44;
+}
+.stock-notification.low {
+    background: linear-gradient(90deg, #e74c3c 0%, #ff7675 100%);
+    border: none;
+    animation: blinkStock 1.2s infinite alternate;
+    box-shadow: 0 2px 8px 0 #e74c3c44;
+}
+@keyframes blinkStock {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.18) drop-shadow(0 0 6px #ff7675); }
+}
+
+/* Adaptación para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .stock-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0.95rem;
+    }
+    .stock-table th, .stock-table td {
+        font-size: 14px;
+        padding: 8px 6px;
+    }
+}
+.movements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.movements-table th, .movements-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.movements-table th {
+    background-color: #333;
+    color: white;
+}
+
+.movements-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.movements-table tr:hover {
+    background-color: #ddd;
+}
